@@ -7,6 +7,8 @@ import Login from './components/Login';
 import Register from './components/Register';
 import Profile from './components/Profile';
 
+import ProductList from './components/productList/ProductList';
+
 
 class App extends Component {
   render() {
@@ -20,7 +22,9 @@ class App extends Component {
           <Route exact path="/login" component={Login} />
           <Route exact path="/profile" component={Profile} />
           </div>
+          <ProductList/>
         </div>
+        
       </Router>
     );
   }
