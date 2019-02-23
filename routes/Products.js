@@ -2,35 +2,37 @@ const express = require('express');
 const router = express.Router();
 const dbProducts = require('../database/dbProducts');
 
-const cors = require('cors');
-const products = express.Router();
+// const cors = require('cors');
+// const products = express.Router();
 
 
 const Product  = require('../models/Product');
 
 // const Gig = require('../models/Gig');
 const Sequelize = require('sequelize');
-const Op = Sequelize.Op;
-products.use(cors());
-
-router.get('/', (req, res) => 
-Product.findAll()
-    .then(products => {
-        console.log(products +'jebe');
-        res.sendStatus(200);
-    })
-    .catch(err => console.log(err)));
+// const Op = Sequelize.Op;
+// products.use(cors());
+// console.log('jebe');
+// router.get('/', (req, res) => 
+// Product.findAll()
+//     .then(products => {
+//         console.log(products +'jebe');
+//         res.sendStatus(200);
+//     })
+//     .catch(err => console.log(err)));
 
 // Get gig list
-// router.get('/', (req, res) =>
-//     Product.findAll()
-//         .then(products => {
-//             console.log(products);  //res.sendStatus(200);
-//             res.render('products', {
-//                 products:products
-//             });
-//         })
-//         .catch(err => console.log(err)));
+router.get('/products', (req, res) =>
+
+    Product.findAll()
+        .then(products => {
+            console.log(products); 
+            res.sendStatus(200);
+            res.render( {
+                products
+            });
+        })
+        .catch(err => console.log(err)));
 
 
 //         //Search for products
