@@ -1,0 +1,18 @@
+.product {
+    width: 20rem;
+    /* padding-top: 10rem; */
+    margin-top: 2rem;
+}
+.product img{
+    /* max-height: 10rem; */
+    height: 15rem;
+}
+h4 {
+    text-align: center;
+}
+p{
+    text-align: center;
+}
+a{
+    text-align: center;
+}

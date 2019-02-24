@@ -68,8 +68,12 @@ app.get('/products', (req, res) => {
         throw err;
         console.log(result);
         res.send(result);
-        const productList = result;
-        res.json(productList);
+        // const productList = result; // origim
+        const products = result;
+
+        // res.json(products); // origin
+        res.json(products);
+
     });
     
 })

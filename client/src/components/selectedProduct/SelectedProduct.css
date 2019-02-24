@@ -1,0 +1,11 @@
+.selectedItem {
+    float: left;
+    margin-left: 2rem;
+}
+.aselectedItem {
+    float: left;
+    background-color: rgb(222, 228, 225);
+    height: 2rem;
+    width: 4rem;
+
+}
