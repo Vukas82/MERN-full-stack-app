@@ -36,15 +36,15 @@ class WishList extends Component {
         let titleClass;
 
         if (this.state.wishList.length > 0 ) {
-            titleClass = "card-title";
+            titleClass = "card-title-show";
         } else {
             titleClass = "card-title-none";
         }
         return (
             <div>
-                <div className="card-block">
-                    <h4 className={titleClass}>Wish list<span>&nbsp;&nbsp;&nbsp;</span><i class="fas fa-cart-arrow-down"></i></h4>
-                    <ul className="list-group" >
+                <div className="wishListcard-block card-block">
+                    <h4 className={titleClass}>Wish list<span>&nbsp;&nbsp;&nbsp;</span><i className="fas fa-cart-arrow-down"></i></h4>
+                    <ul className="wishList-group list-group" >
                         {this.createWishList()}
                     </ul>
                 </div>

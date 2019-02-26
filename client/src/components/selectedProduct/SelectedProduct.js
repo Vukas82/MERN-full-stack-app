@@ -16,6 +16,7 @@ class SelectedProduct extends Component {
             <p className="selectedItem">  {this.props.product.name + ' '}
                  <b>$ {this.props.product.price}</b>
             </p>
+            <button className="buyselectedItem btn btn-primary " onClick={() => this.removeProduct()}><i class="fas fa-cash-register"></i></button>
          </li>
         )
     }

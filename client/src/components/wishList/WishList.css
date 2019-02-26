@@ -1,3 +1,19 @@
 .card-title-none {
     display: none;
 }
+.wishListcard-block  {
+    background-color: gold;
+    /* margin-right: 6rem;
+    margin-left: 6rem; */
+
+}
+.wishList-group {
+    background-color: greenyellow;
+    text-align: center;
+}
+.card-block  {
+    background-color: gold;
+}
+.card-title-show{
+    padding-top: .5rem;
+}

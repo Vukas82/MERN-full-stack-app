@@ -48,7 +48,7 @@ class Product extends Component {
             <div className="card product col-sm-12">
                 <img className="card-img-top" src={this.props.product.imgUrl} alt="Product"></img>
                 <div className="card-block">
-                    <h4 className="card-title">{this.props.product.title}</h4>
+                    <h5 className="card-title"><b>{this.props.product.name}</b></h5>
                     <p className="card-text">Price: ${this.props.product.price}</p>
                     <a className={btnClass} onClick={() => this.onButtonClicked()} data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">{this.state.onWishList ? "Remove From Wish list" : "Add To Wish list"}</a>
                 </div>
