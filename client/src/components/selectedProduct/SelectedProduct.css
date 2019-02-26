@@ -4,8 +4,17 @@
 }
 .aselectedItem {
     float: left;
-    background-color: rgb(222, 228, 225);
-    height: 2rem;
-    width: 4rem;
-
+    /* background-color:rgb(193, 204, 204); */
+    height: 1.8rem;
+    width: 5rem;
+    line-height: 0;
+}
+.list-group-item {
+    height: 3.3rem;
+    position: relative;
+    display: block;
+    padding: .75rem 1.25rem;
+    margin-bottom: -1px;
+    background-color: rgb(193, 204, 204);
+    border: 1px solid rgba(0,0,0,.125);
 }

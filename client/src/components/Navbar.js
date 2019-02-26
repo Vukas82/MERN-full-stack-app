@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import {Link, withRouter} from 'react-router-dom';
 
+
 class Navbar extends Component {
     logOut(e){
         e.preventDefault()
@@ -39,6 +40,7 @@ class Navbar extends Component {
         )
         return (
             <nav className="navbar navbar-expand-lg navbar-dark bg-dark rounded">
+
                 <button className="navbar-toggler"
                 type="button"
                 data-togle="collapse"
@@ -60,6 +62,8 @@ class Navbar extends Component {
                     </ul>
                     {localStorage.usertoken ? userLink : loginRegLink}
                 </div>
+                <a href="/products"><i className="fas fa-cart-plus" style={{fontSize: 28}}></i></a>
+
             </nav>
         )
     }

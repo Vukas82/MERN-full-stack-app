@@ -11,7 +11,7 @@ class Landing extends Component {
                 </div>
                 <div className="jumbotron">
                     <div className="col-sm-4 mx-auto">
-                    <h1 className="text-center"><i class="fas fa-angle-double-right" style={{fontSize: 48}}></i><a href="/products"><i className="fas fa-cart-plus" style={{fontSize: 48}}></i></a><i class="fas fa-angle-double-left" style={{fontSize: 48}}></i></h1>
+                    <h1 className="text-center"><i className="fas fa-angle-double-right" style={{fontSize: 48}}></i><a href="/products"><i className="fas fa-cart-plus" style={{fontSize: 48}}></i></a><i class="fas fa-angle-double-left" style={{fontSize: 48}}></i></h1>
                     </div>
                 </div>
             </div>

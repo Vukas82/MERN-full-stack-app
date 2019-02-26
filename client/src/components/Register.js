@@ -32,9 +32,9 @@ class Register extends Component {
         }
 
         register(user).then(res => {
-            // if (res) {
+            if (!res) {
                 this.props.history.push('/login')
-            // }
+            }
         })
     }
 

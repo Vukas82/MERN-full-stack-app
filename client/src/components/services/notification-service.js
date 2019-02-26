@@ -1,0 +1,45 @@
+export const NOTIF_WISHLIST_CHANGED = "notif_wishlist_changed";
+
+var observers = {};
+let instance = null;
+
+class NotificationService {
+    constructor() {
+        if (!instance) {
+            instance = this;
+        }
+        return instance;
+    }
+    postNotification = (notifName, data) => {
+        let obs = observers[notifName];
+        for (let i = 0; i < obs.length; i++) {
+            let obj = obs[i];
+            obj.callBack(data);
+        }
+
+    }
+    removeObserver = (observer, notifName) => {
+        let obs = observers[notifName];
+
+        if (obs) {
+            for (let i = 0; i < obs.length; i++) {
+                if (observer === obs[i].observer) {
+                    obs.splice(i, 1);
+                    observers[notifName] = obs;
+                    break;
+                }
+            }
+        }
+    }
+
+    addObserver = (notifName, observer, callBack) => {
+        let obs = observers[notifName];
+        if (!obs) {
+            observers[notifName] = [];
+        }
+        let obj = {observer: observer, callBack: callBack};
+        observers[notifName].push(obj);
+    }
+}
+
+export default NotificationService;
