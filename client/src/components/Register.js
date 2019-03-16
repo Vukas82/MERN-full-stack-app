@@ -17,11 +17,11 @@ class Register extends Component {
 
     }
 
-    onChange(e){
-        this.setState({[e.target.name]: e.target.value})
+    onChange(e) {
+        this.setState({ [e.target.name]: e.target.value })
     }
 
-    onSubmit(e){
+    onSubmit(e) {
         e.preventDefault()
 
         const user = {
